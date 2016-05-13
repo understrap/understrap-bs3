@@ -2,7 +2,7 @@
 /**
  * understrap functions and definitions
  *
- * @package understrap
+ * @package understrap-bs3
  */
 
 /**

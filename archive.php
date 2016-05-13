@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package understrap
+ * @package understrap-bs3
  */
 
 get_header(); ?>
@@ -41,7 +41,7 @@ get_header(); ?>
 
                         <?php endwhile; ?>
 
-                            <?php understrap_paging_nav(); ?>
+                            <?php understrap_bs3_paging_nav(); ?>
 
                         <?php else : ?>
 

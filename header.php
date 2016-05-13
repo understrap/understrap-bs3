@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package understrap
+ * @package understrap-bs3
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -27,7 +27,7 @@
     <!-- ******************* The Navbar Area ******************* -->
     <div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 	
-        <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'understrap' ); ?></a>
+        <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'understrap-bs3' ); ?></a>
 
         <nav class="site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                             

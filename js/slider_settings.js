@@ -2,10 +2,10 @@
     jQuery(document).ready(function() {
         var owl = jQuery('.owl-carousel');
         owl.owlCarousel({
-            items:(slider.items),
+            items:(understrap_bs3_slider_variables.items),
             loop:true,
             autoplay:true,
-            autoplayTimeout:(slider.timeout),
+            autoplayTimeout:(understrap_bs3_slider_variables.timeout),
             animateOut: 'fadeOut',
             animateIn: 'fadeIn',
             nav: false,

@@ -3,7 +3,7 @@
  * Add WooCommerce support
  *
  *
- * @package understrap
+ * @package understrap-bs3
  */
 
 add_action( 'after_setup_theme', 'woocommerce_support' );

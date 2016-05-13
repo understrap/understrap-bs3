@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package understrap
+ * @package understrap-bs3
  */
 ?>
 
@@ -21,9 +21,9 @@
                 <footer id="colophon" class="site-footer" role="contentinfo">
 
                     <div class="site-info">
-                        <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'understrap' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'understrap' ), 'WordPress' ); ?></a>
+                        <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'understrap-bs3' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'understrap-bs3' ), 'WordPress' ); ?></a>
                         <span class="sep"> | </span>
-                        <?php printf( __( 'Theme: %1$s by %2$s.', 'understrap' ), 'understrap', '<a href="http://understrap.com/" rel="designer">understrap.com</a>' ); ?>
+                        <?php printf( __( 'Theme: %1$s by %2$s.', 'understrap-bs3' ), 'understrap-bs3', '<a href="http://understrap.com/" rel="designer">understrap.com</a>' ); ?>
                     </div><!-- .site-info -->
 
                 </footer><!-- #colophon -->

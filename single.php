@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package understrap
+ * @package understrap-bs3
  */
 
 get_header(); ?>
@@ -20,7 +20,7 @@ get_header(); ?>
 
                         <?php get_template_part( 'loop-templates/content', 'single' ); ?>
 
-                        <?php understrap_post_nav(); ?>
+                        <?php understrap_bs3_post_nav(); ?>
 
                         <?php
                         // If comments are open or we have at least one comment, load up the comment template

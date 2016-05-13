@@ -1,6 +1,6 @@
 <?php
 /**
- * @package understrap
+ * @package understrap-bs3
  */
 ?>
 
@@ -13,7 +13,7 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 
 			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
+				<?php understrap_bs3_posted_on(); ?>
 			</div><!-- .entry-meta -->
 
 		<?php endif; ?>
@@ -30,7 +30,7 @@
 
 			<?php
 				wp_link_pages( array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+					'before' => '<div class="page-links">' . __( 'Pages:', 'understrap-bs3' ),
 					'after'  => '</div>',
 				) );
 			?>
@@ -39,7 +39,7 @@
 
 	<footer class="entry-footer">
 
-		<?php understrap_entry_footer(); ?>
+		<?php understrap_bs3_entry_footer(); ?>
 		
 	</footer><!-- .entry-footer -->
     

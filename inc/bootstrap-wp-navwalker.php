@@ -13,7 +13,7 @@
  * Author: Edward McIntyre - @twittem
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
-  * @package understrap
+  * @package understrap-bs3
  */
 //exit if accessed directly
 if(!defined('ABSPATH')) exit;

@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package understrap
+ * @package understrap-bs3
  */
 
 /**
@@ -13,11 +13,11 @@
  * @param array $args Configuration arguments.
  * @return array
  */
-function understrap_page_menu_args( $args ) {
+function understrap_bs3_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
-add_filter( 'wp_page_menu_args', 'understrap_page_menu_args' );
+add_filter( 'wp_page_menu_args', 'understrap_bs3_page_menu_args' );
 
 /**
  * Adds custom classes to the array of body classes.
@@ -25,7 +25,7 @@ add_filter( 'wp_page_menu_args', 'understrap_page_menu_args' );
  * @param array $classes Classes for the body element.
  * @return array
  */
-function understrap_body_classes( $classes ) {
+function understrap_bs3_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -33,7 +33,7 @@ function understrap_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'understrap_body_classes' );
+add_filter( 'body_class', 'understrap_bs3_body_classes' );
 
 if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
     /**
@@ -43,7 +43,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
      * @param string $sep Optional separator.
      * @return string The filtered title.
      */
-    function understrap_wp_title( $title, $sep ) {
+    function understrap_bs3_wp_title( $title, $sep ) {
         if ( is_feed() ) {
             return $title;
         }
@@ -57,24 +57,24 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
         }
 // Add a page number if necessary:
         if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-            $title .= " $sep " . sprintf( __( 'Page %s', 'understrap' ), max( $paged, $page ) );
+            $title .= " $sep " . sprintf( __( 'Page %s', 'understrap-bs3' ), max( $paged, $page ) );
         }
         return $title;
     }
-    add_filter( 'wp_title', 'understrap_wp_title', 10, 2 );
+    add_filter( 'wp_title', 'understrap_bs3_wp_title', 10, 2 );
     /**
      * Title shim for sites older than WordPress 4.1.
      *
      * @link https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
      * @todo Remove this function when WordPress 4.3 is released.
      */
-    function understrap_render_title() {
+    function understrap_bs3_render_title() {
 
         ?>
         <title><?php wp_title( '|', true, 'right' ); ?></title>
     <?php
     }
-    add_action( 'wp_head', 'understrap_render_title' );
+    add_action( 'wp_head', 'understrap_bs3_render_title' );
 
 endif;
 
@@ -86,12 +86,12 @@ if ( ! function_exists( '_wp_render_title_tag' ) ) :
 	 * @todo Remove this function when WordPress 4.3 is released.
 	 */
 
-	function understrap_render_title() {
+	function understrap_bs3_render_title() {
         ?>
         <title><?php wp_title( '|', true, 'right' ); ?></title>
     <?php
 	}
-	add_action( 'wp_head', 'understrap_render_title' );
+	add_action( 'wp_head', 'understrap_bs3_render_title' );
 endif;
 
 /**
@@ -106,11 +106,11 @@ endif;
  * @global WP_Query $wp_query WordPress Query object.
  * @return void
  */
-function understrap_setup_author() {
+function understrap_bs3_setup_author() {
 	global $wp_query;
 
 	if ( $wp_query->is_author() && isset( $wp_query->post ) ) {
 		$GLOBALS['authordata'] = get_userdata( $wp_query->post->post_author );
 	}
 }
-add_action( 'wp', 'understrap_setup_author' );
+add_action( 'wp', 'understrap_bs3_setup_author' );
