@@ -1,4 +1,4 @@
-// Defining base pathes
+gulp// Defining base pathes
 var basePaths = {
     bower: './bower_components/',
     dev: './src/'
@@ -63,7 +63,15 @@ gulp.task('scripts', function() {
     ])
     .pipe(concat('theme.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./js/'))
+    .pipe(gulp.dest('./js/'));
+    
+  gulp.src([
+    basePaths.dev + 'js/bootstrap3/bootstrap.min.js',  //<--------- Change from /bootstrap3 to /bootstrap4 Watch out! just for testing in the moment!
+    basePaths.dev + 'js/owl.carousel.min.js', 
+    basePaths.dev + 'js/skip-link-focus-fix.js'
+    ])
+    .pipe(concat('theme.js'))
+    .pipe(gulp.dest('./js/'));
 });
 
 // Run: 

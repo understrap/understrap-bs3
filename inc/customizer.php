@@ -26,7 +26,7 @@ function understrap_bs3_theme_customize_register( $wp_customize ) {
 
     $wp_customize->add_setting( 'understrap_bs3_theme_slider_count_setting', array(
         'default'        => '1',
-        'sanitize_callback' => 'esc_textarea'
+        'sanitize_callback' => 'absint'
     ) );
 
     $wp_customize->add_control( 'understrap_bs3_theme_slider_count', array(
