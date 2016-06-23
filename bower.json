@@ -1,6 +1,6 @@
 {
   "name": "understrap",
-  "version": "0.3.9",
+  "version": "0.3.9.5",
   "homepage": "http://understrap.com",
   "authors": [
     "Holger Koenemann <office@holgerkoenemann.de>"
@@ -31,6 +31,6 @@
     "bootstrap": "v4.0.0-alpha.2"
   },
   "_source": "https://github.com/holger1411/understrap.git",
-  "_target": "~0.3.9",
+  "_target": "~0.3.9.5",
   "_originalSource": "understrap"
 }

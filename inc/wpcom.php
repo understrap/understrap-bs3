@@ -4,7 +4,7 @@
  *
  * This file is centrally included from `wp-content/mu-plugins/wpcom-theme-compat.php`.
  *
- * @package understrap-bs3
+ * @package understrap
  */
 
 /**
@@ -12,7 +12,7 @@
  *
  * @global array $themecolors
  */
-function understrap_bs3_wpcom_setup() {
+function understrap_wpcom_setup() {
 	global $themecolors;
 
 	// Set theme colors for third party services.
@@ -26,4 +26,4 @@ function understrap_bs3_wpcom_setup() {
 		);
 	}
 }
-add_action( 'after_setup_theme', 'understrap_bs3_wpcom_setup' );
+add_action( 'after_setup_theme', 'understrap_wpcom_setup' );

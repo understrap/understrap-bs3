@@ -1,5 +1,3 @@
-Start talking: [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/holger1411/understrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
-
 UnderStrap WordPress Theme Framework
 ===
 
@@ -9,12 +7,17 @@ Child Theme Project: https://github.com/holger1411/understrap-child
 
 Changelog
 =
+            - **0.3.9 Jun. 21th 2016**
+                   - Code Cleanup
+                   - Fixing smaller bugs
+                   - Complete credits/license infos
+
+
             - **0.3.8.1 May. 10th 2016**
                    - Removing all unused CSS and JS files
                    - Fixing sub-submenu items display problems in dropdown menu
 
-                   
-            - **0.3.8 Mar. 9th 2016 Pre-Release**
+            - **0.3.8 Mar. 9th 2016 **
                    - Adding footer widget area
                    - Adjust Bootstrap markup for searchform and search widget
 
@@ -100,9 +103,9 @@ Some basics about the SCSS and CSS files comes with UnderStrap:
 - The theme.css file in /css/ subdirectory provides all styles. It is composed by five different SCSS sets and one variables file from /sass/theme.scss:
 
                   - 1 "theme/theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here
-                  - 2 "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";  // <--------- All the Bootstrap stuff - Don´t edit this!
+                  - 2 "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // <--------- All the Bootstrap stuff - Don´t edit this!
                   - 3 "understrap/understrap"; // <--------- Some basic WordPress stylings and needed styles to combine Boostrap and Underscores
-                  - 4 "../bower_components/fontawesome/scss/font-awesome"; // <--------- Font Awesome Icon styles
+                  - 4 "../src/fontawesome/scss/font-awesome"; // <--------- Font Awesome Icon styles
 
                   // Any additional imported files //
                   - 5 "theme/theme";  // <--------- Add your styles into this file
@@ -118,9 +121,34 @@ Installation
 - Go to Appearance -> Themes
 - Activate the UnderStrap theme
 
+Developing with NPM, Bower, Gulp and SASS
+=
+- Make sure you have installed Node.js and Bower on your computer globally
+- Then open your terminal and browse to the location of your UnderStrap copy
+- Run:
+                  $ npm install
+than:
+                  $ bower install
+and finally:
+                  $ gulp copy-assets
+
+To work and compile your SASS files on the fly start:
+                  $ gulp watch
+
+
 How to use the build-in Widget Slider?
 =
 The frontpage slider is widget driven. Simply add more than one widget to widget position "Hero".
 - Click on Appearance -> Widgets 
 - Add two or more widgets of any kind to widget area "Hero"
 - Thats it
+
+Licenses & Credits
+=
+- Font Awesome: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+- Bootstrap: http://getbootstrap.com | https://github.com/twbs/bootstrap/blob/master/LICENSE (Code licensed under MIT, documentation under CC BY 3.0.)
+- Owl Carousel 2: http://www.owlcarousel.owlgraphic.com/ | https://github.com/smashingboxes/OwlCarousel2/blob/develop/LICENSE (Code licensed under MIT)
+and of course
+- jQuery: https://jquery.org | (Code licensed under MIT)
+- WP Bootstrap Navwalker by Edward McIntyre: https://github.com/twittem/wp-bootstrap-navwalker | GNU GPL;
+

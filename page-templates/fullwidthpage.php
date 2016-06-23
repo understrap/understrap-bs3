@@ -4,7 +4,7 @@
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published
  *
- * @package understrap-bs3
+ * @package understrap
  */
 
 get_header(); ?>

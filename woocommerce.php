@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package understrap-bs3
+ * @package understrap
  */
 
 get_header(); ?>

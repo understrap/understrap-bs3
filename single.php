@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package understrap-bs3
+ * @package understrap
  */
 
 get_header(); ?>

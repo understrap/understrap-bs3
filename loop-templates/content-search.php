@@ -1,6 +1,6 @@
 <?php
 /**
- * @package understrap-bs3
+ * @package understrap
  */
 ?>
 
@@ -14,7 +14,7 @@
 
 			<div class="entry-meta">
 
-				<?php understrap_bs3_posted_on(); ?>
+				<?php understrap_posted_on(); ?>
 
 			</div><!-- .entry-meta -->
 
@@ -30,7 +30,7 @@
 
 	<footer class="entry-footer">
 
-		<?php understrap_bs3_entry_footer(); ?>
+		<?php understrap_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

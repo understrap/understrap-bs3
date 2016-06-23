@@ -3,11 +3,11 @@
  * Declaring widgets
  *
  *
- * @package understrap-bs3
+ * @package understrap
  */
-function understrap_bs3_widgets_init() {
+function understrap_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'understrap-bs3' ),
+		'name'          => __( 'Sidebar', 'understrap' ),
 		'id'            => 'sidebar-1',
 		'description'   => 'Sidebar widget area',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -17,7 +17,7 @@ function understrap_bs3_widgets_init() {
 	) );
 
     register_sidebar( array(
-        'name'          => __( 'Hero Slider', 'understrap-bs3' ),
+        'name'          => __( 'Hero Slider', 'understrap' ),
         'id'            => 'hero',
         'description'   => 'Hero slider area. Place two or more widgets here and they will slide!',
         'before_widget' => '<div class="jumbotron"><div class="container"><div class="row"><div class="item"><div class="col-md-12">',
@@ -27,7 +27,7 @@ function understrap_bs3_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name'          => __( 'Hero Static', 'understrap-bs3' ),
+        'name'          => __( 'Hero Static', 'understrap' ),
         'id'            => 'statichero',
         'description'   => 'Static Hero widget. no slider functionallity',
         'before_widget' => '',
@@ -37,7 +37,7 @@ function understrap_bs3_widgets_init() {
     ) );
 
         register_sidebar( array(
-        'name'          => __( 'Footer Full', 'understrap-bs3' ),
+        'name'          => __( 'Footer Full', 'understrap' ),
         'id'            => 'footerfull',
         'description'   => 'Widget area below main content and above footer',
         'before_widget' => '',
@@ -47,4 +47,4 @@ function understrap_bs3_widgets_init() {
     ) );
 
 }
-add_action( 'widgets_init', 'understrap_bs3_widgets_init' );
+add_action( 'widgets_init', 'understrap_widgets_init' );
